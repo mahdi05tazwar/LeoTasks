@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="581.0" prefWidth="1000.0" style="-fx-background-color: #000F43;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mtr.leotasks.TasksController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="94.0" prefWidth="1000.0" spacing="10.0">
+               <padding>
+                  <Insets left="20.0" top="10.0" />
+               </padding>
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="listNameLabel" maxWidth="1.7976931348623157E308" text="Party" textFill="#00beff">
+                           <font>
+                              <Font name="Segoe UI Light" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#goBack" stylesheets="@styles.css" text="Go back">
+                           <VBox.margin>
+                              <Insets right="15.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="470.0" prefWidth="505.0">
+               <children>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="122.0" text="Tasks" textFill="#00beff">
+                     <font>
+                        <Font name="Segoe UI Light" size="31.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane fitToWidth="true" hbarPolicy="NEVER" pannable="true" prefHeight="390.0" prefWidth="940.0" style="-fx-background: #003263; -fx-background-color: #003263; -fx-border-width: 0px; -fx-border-color: #003263;" VBox.vgrow="ALWAYS">
+                     <content>
+                        <VBox fx:id="tasksVBox" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="390.0" prefWidth="940.0" style="-fx-padding: 20px;">
+                           <children>
+                              <HBox fx:id="sampleHBox" alignment="CENTER" fillHeight="false" prefHeight="65.0">
+                                 <children>
+                                    <VBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label styleClass="tasklabel" stylesheets="@styles.css" text="1. Purchase drinks for the party : 17-10-2023 12:45:00 (10 days 10 hours 10 minutes left)" VBox.vgrow="NEVER">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER_RIGHT">
+                                       <children>
+                                          <Button mnemonicParsing="false" stylesheets="@styles.css" text="Remove" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </VBox.margin>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#openTaskAddingWindow" stylesheets="@styles.css" text="Add a task">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#deleteList" stylesheets="@styles.css" text="Delete this list">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

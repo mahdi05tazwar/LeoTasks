@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="581.0" prefWidth="1000.0" style="-fx-background-color: #000F43;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mtr.leotasks.HomeController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="BASELINE_LEFT" prefHeight="94.0" prefWidth="1000.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="84.0" prefWidth="92.0" text="Leo" textFill="#00beff">
+                     <font>
+                        <Font name="Segoe UI Light" size="57.0" />
+                     </font>
+                  </Label>
+                  <Label text="THE MOST EFFECTIVE TASKS APP OF THE 21ST CENTURY" textFill="#00beff">
+                     <font>
+                        <Font name="Segoe UI Light" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="20.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="463.0" prefWidth="1000.0" spacing="100.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="463.0" prefWidth="505.0">
+                     <children>
+                        <Label prefHeight="40.0" prefWidth="122.0" text="Your lists" textFill="#00beff">
+                           <font>
+                              <Font name="Segoe UI Light" size="31.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane hbarPolicy="NEVER" pannable="true" prefHeight="394.0" prefWidth="505.0" style="-fx-background: #003263; -fx-background-color: #003263; -fx-border-width: 0px; -fx-border-color: #003263;" VBox.vgrow="ALWAYS">
+                           <content>
+                              <VBox fx:id="listsVBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="373.0" prefWidth="502.0" style="-fx-padding: 20px;">
+                                 <children>
+                                    <HBox fx:id="sampleListHBox" alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="351.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" styleClass="listbtns" stylesheets="@styles.css" text="Party" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="463.0" prefWidth="232.0">
+                     <children>
+                        <Button fx:id="createListButton" mnemonicParsing="false" onAction="#openListCreationWindow" prefHeight="47.0" prefWidth="215.0" stylesheets="@styles.css" text="Create new tasks list" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Light" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#deleteAllLists" prefHeight="47.0" prefWidth="215.0" stylesheets="@styles.css" text="Delete all lists" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Light" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#openInfo" prefHeight="47.0" prefWidth="215.0" stylesheets="@styles.css" text="View information" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Light" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

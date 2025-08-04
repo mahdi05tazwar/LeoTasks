@@ -1,0 +1,44 @@
+.button{
+    -fx-background-color: #00beff;
+    -fx-background-radius: 30px;
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI Light", "Helvetica", "sans serif";
+    -fx-font-size: 15px;
+}
+
+.button:pressed{
+     -fx-background-color:  #000F43;
+}
+
+.listbtns{
+    -fx-text-fill: #00beff;
+    -fx-font-family: "Segoe UI Light", "Helvetica", "sans serif";
+    -fx-font-size: 24px;
+    -fx-background-color: transparent;
+    -fx-border-width: 0px;
+    -fx-padding: 5px;
+}
+
+.popuptitle{
+    -fx-text-fill: #00beff;
+    -fx-font-family: "Segoe UI Light", "Helvetica", "sans serif";
+    -fx-font-size: 24px;
+    -fx-padding: 10px;
+}
+
+.warninglabel{
+    -fx-text-fill: red;
+    -fx-font-family: "Arial", "Helvetica", "sans serif";
+}
+
+.tasklabel{
+    -fx-text-fill: #00beff;
+    -fx-font-family: "Segoe UI Light", "Helvetica", "sans serif";
+    -fx-font-size: 20px;
+}
+
+.infolabel{
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Segoe UI Light", "Helvetica", "sans serif";
+    -fx-font-size: 20px;
+}
