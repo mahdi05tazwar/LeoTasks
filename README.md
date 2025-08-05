@@ -6,4 +6,4 @@ Project was initially set up with IntelliJ's own build, but then I wanted it to 
 Currently busy with other, newer projects, so can't look further into it. Would love it if someone pointed out the issue.
 
 ## Last Working Version
-Thw last compiled, working version can be downloaded from my website https://mahditaz.pythonanywhere.com.
+The last compiled, working version can be downloaded from my website https://mahditaz.pythonanywhere.com.
